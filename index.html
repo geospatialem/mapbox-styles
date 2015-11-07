@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="description" content="Mapbox Studio Fun">
+    <meta name="author" content="Kitty Hurley">
+    <title>Mapbox Style Fun</title>
+
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.11.2/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.11.2/mapbox-gl.css' rel='stylesheet' />
+
+    <style>
+        body { margin:0; padding:0; }
+        #map { position:absolute; top:0; bottom:0; width:100%; }
+    </style>
+
+</head>
+<body>
+
+<div id='map'></div>
+
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoiaG9ja2V5ZHVjazMwIiwiYSI6InE4cmFHNlUifQ.X5m_TSatNjZs6Vc7B3_m2A';
+var map = new mapboxgl.Map({
+    center: [-93.25, 44.96],
+    zoom: 9,
+    container: 'map',
+    style: 'mapbox://styles/hockeyduck30/cigogi4pc003ba6kshtxhrr4c'
+});
+
+map.addControl(new mapboxgl.Navigation({
+  position: 'top-left'
+}));
+
+</script>
+
+</body>
+</html>
