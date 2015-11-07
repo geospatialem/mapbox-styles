@@ -12,33 +12,16 @@
     <meta name="author" content="Kitty Hurley">
     <title>Mapbox Style Fun</title>
 
-    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.11.2/mapbox-gl.js'></script>
-    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.11.2/mapbox-gl.css' rel='stylesheet' />
-
-    <style>
-        body { margin:0; padding:0; }
-        #map { position:absolute; top:0; bottom:0; width:100%; }
-    </style>
+    <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v0.11.2/mapbox-gl.css" rel="stylesheet" />
+    <link href="app/app.css" rel="stylesheet" />
 
 </head>
 <body>
 
 <div id='map'></div>
 
-<script>
-mapboxgl.accessToken = 'pk.eyJ1IjoiaG9ja2V5ZHVjazMwIiwiYSI6InE4cmFHNlUifQ.X5m_TSatNjZs6Vc7B3_m2A';
-var map = new mapboxgl.Map({
-    center: [-93.25, 44.96],
-    zoom: 9,
-    container: 'map',
-    style: 'mapbox://styles/hockeyduck30/cigogi4pc003ba6kshtxhrr4c'
-});
-
-map.addControl(new mapboxgl.Navigation({
-  position: 'top-left'
-}));
-
-</script>
+    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v0.11.2/mapbox-gl.js"></script>
+    <script src="app/app.js"></script>
 
 </body>
 </html>
